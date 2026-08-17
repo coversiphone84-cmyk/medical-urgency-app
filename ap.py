@@ -28,3 +28,14 @@ if st.button("Predict Urgency", type="primary"):
             st.write(f"**Confidence Score:** {confidence:.1f}%")
     else:
         st.warning("Please enter a patient description first.")
+
+
+st.divider()
+with st.expander("ℹ️ About the Model & Training Code"):
+    st.markdown("""
+    **Model Architecture:** Fine-tuned Transformer for Text Classification  
+    **Frameworks Used:** PyTorch, Hugging Face Transformers, Datasets  
+    
+    📄 **View Training Code & Notebook:** [GitHub Repository](https://github.com/coversiphone84-cmyk/medical-urgency-app)  
+    🤗 **View Model Weights:** [Hugging Face Model Hub](https://huggingface.co/usman-1040/my_custom_urgency_model)
+    """)
